@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Quote Font";
+  src: url("/static/fonts/Victor.ttf");
+}
+
+@font-face {
+  font-family: "Time Font";
+  src: url("/static/fonts/Mechanical.ttf");
+}
+
+@font-face {
+  font-family: "Image Font";
+  src: url("/static/fonts/PoiretOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Heading Font";
+  src: url("/static/fonts/Sigmar-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Temp Quote Font";
+  src: url("/static/fonts/CabinSketch-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Description Font";
+  src: url("/static/fonts/Alkatra-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Navbar Font";
+  src: url("/static/fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Song Font";
+  src: url("/static/fonts/Forum-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Footer Font";
+  src: url("/static/fonts/DaddyTimeMono.ttf");
+}
+
+@font-face {
+  font-family: "FA Font";
+  src: url("/static/fonts/FA\ Font.otf");
+}

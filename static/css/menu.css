@@ -1,0 +1,289 @@
+@import url("/static/css/fonts.css");
+
+.menu_box{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-image: url("/static/images/banner_3.jpeg");
+    background-size: cover;
+    border-radius: 70px;
+    padding: 50px;
+}
+
+.menu_headings{
+    font-family: "Heading Font";
+    color: rgb(70, 32, 0);
+}
+
+.menu_list {
+    display: flex;
+    border-radius: 30px; 
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.368) ;
+    padding: 20px;
+    list-style:decimal;
+    list-style-position: inside;
+}
+
+.menu_list li{
+    width: 90vw;
+    text-align: left;
+    padding: 20px;
+    font-family: "Quote Font";
+    border-radius: 30px; 
+    background: rgba(255, 255, 255, 0.565) ;
+    margin-bottom: 1%;
+}
+
+.quantity-input{
+    position: absolute;
+    left: 80vw;
+    width: 50px;
+    font-size: 20px;
+}
+
+.price{
+    position: absolute;
+    left: 65vw;
+    font-size: 25px;
+}
+
+.label{
+    position: absolute;
+    left: 40vw;
+}
+
+.flavor{
+    position: absolute;
+    left: 45vw;
+    width: 40px;
+    height: 40px;
+}
+
+.add{
+    position: absolute;
+    left: 85vw;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.minus{
+    position: absolute;
+    left: 88.5vw;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.food_name{
+    font-weight: 1000;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.headings{
+    font-family: "Heading Font";
+    color: rgb(70, 32, 0);
+    font-size: 70px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.cart_box{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-image: url("/static/images/banner_4.jpg");
+    background-size: cover;
+    border-radius: 70px;
+    padding: 100px;
+}
+
+.cart_list{
+    background: rgba(255, 255, 255, 0.578);
+    border-radius: 30px;
+    padding: 5px;
+    padding-left: 50px;
+    list-style: lower-greek;
+    padding-bottom: 30px;
+}
+
+.Item_heading{
+    text-align: left;
+    text-decoration: underline;
+    font-family: "Temp Quote Font";
+    font-size: 40px;
+}
+
+.Total_price_heading{
+    text-align: left;
+    padding-left: 30px;
+    font-family: "Temp Quote Font";
+}
+
+.cart_list li{
+    text-align: left;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.582);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 23px;
+    font-size: 20px;
+    font-family: "Album Font";
+}
+
+.cart_item_price{
+    position: absolute;
+    left: 76vw;
+    font-size: 30px;
+    font-family: "Quote Font";
+}
+
+.form{
+    background: rgba(255, 255, 255, 0.578);
+    border-radius: 30px;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Song Font";
+    padding: 30px;
+}
+
+.form label{
+    padding: 30px;
+}
+
+#name{
+    position: absolute;
+    left: 30vw;
+    font-size: 20px;
+}
+
+#room{
+    position: absolute;
+    left: 30vw;
+    font-size: 20px;
+}
+
+#phone{
+    position: absolute;
+    left: 30vw;
+    font-size: 20px;
+}
+
+.submit{
+    font-size: 30px;
+    position: relative;
+    left: 35vw;
+    font-family: "Song Font";
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.submit:hover{
+    background-color: gainsboro;
+}
+
+.cart_item_basePrice{
+    position: absolute;
+    left: 40vw;
+    font-size: 30px;
+    font-family: "Quote Font";
+}
+
+.cart_item_quantity{
+    position: absolute;
+    left: 65vw;
+    font-size: 30px;
+    font-family: "Quote Font";
+}
+
+.random_span{
+    position: absolute;
+    left: 47vw;
+    font-size: 30px;
+    font-family: "Quote Font";
+}
+
+#name{
+    border-radius: 30px;
+    padding-left: 10px;
+    color: rgba(251, 124, 92, 0.774);
+}
+
+#room{
+    border-radius: 30px;
+    padding-left: 10px;
+    color: rgba(251, 124, 92, 0.774);
+}
+
+#phone{
+    border-radius: 30px;
+    padding-left: 10px;
+    color: rgba(251, 124, 92, 0.774);
+}
+
+.food_images{
+  display: flex;
+  width: fit-content;
+  border-radius: 30px;
+  position: relative;
+  background: #ffffff80;
+}
+
+.food_figure{
+  width: fit-content;
+  border-radius: 30px;
+  position: relative;
+}
+
+.food_figure img{
+  display: block;
+  height: 300px;
+  width: 350px;
+  border-radius: 30px;
+  position: relative;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.food_figure figure{
+    display: flex;
+  background: rgba(255, 255, 255, 0.67);
+  height: fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  position: relative; /* add position relative */
+}
+
+
+
+.food_figure:hover figcaption {
+  opacity: 1;
+}
+
+.food_images figcaption {
+  display: flex;
+  align-items: center; /* add align-items center */
+  justify-content: center; /* add justify-content center */
+  text-align: center;
+  font-family: "Song Font";
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.734);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  font-size: 30px;
+}
+
+.size{
+    padding: 10px;
+    word-wrap: break-word;
+}

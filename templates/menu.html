@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='/favicon.ico') }}">
+
+  <link rel="stylesheet" href="./static/css/common.css" />
+  <link rel="stylesheet" href="./static/css/navbar.css" />
+  <link rel="stylesheet" href="./static/css/footer.css" />
+  <link rel="stylesheet" href="./static/css/menu.css" />
+    <title>IIITeatz</title>
+</head>
+
+<body>
+  <!-- header -->
+
+  <div class="meanius">
+    <img src="./static/images/logo.jpeg" alt="Meanius Logo" width="60" class="meanius-item" />
+    <p class="meanius-item"></p>
+    <img src="./static/images/banner_FEF665.png" alt="Meanius" width="250" class="meanius-item" />
+  </div>
+  <div class="navbar">
+    <a href="index.html">About</a>
+    <a href="menu.html" class="navbar-selected">Menu</a>
+    <a href="orders.html">Present Orders</a>
+      <a href="cook.html">Cook Special</a>
+    <a href="https://github.com/CS6-201-ISS-S23/project-diss">Contribute</a>
+  </div>
+
+  <!-- menu -->
+
+
+
+
+  <h1 class="headings">Menu</h1>
+
+  <div class="menu_box">
+    <h1 class="menu_headings">Food</h1>
+
+    <ol id="Food" class="menu_list">
+      <li>
+        <span class="food_name">Fried rice</span>
+        <span class="label">
+          <label for="flavor">Item Type:</label>
+          <select id="flavor" name="flavor">
+            <option value="chocolate">Chicken</option>
+            <option value="vanilla">Veg</option>
+            <option value="strawberry">egg</option>
+          </select>
+        </span>
+
+        <span class="price">Price: ₹100</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <div class="size">
+            <p>A classic Asian-inspired dish that combines fluffy white rice, crisp vegetables, savory sauces,
+              and </p>
+            <p>protein such as chicken,egg or veggies into a mouthwatering one-pan meal.</p>
+          </div>
+
+
+          <div class="food_images">
+            <figure class="food_figure">
+              <img src="/static/images/food/fried_rice_1.jpeg" alt="Fried Rice">
+              <figcaption>Chicken Fried Rice (N)</figcaption>
+            </figure>
+            <figure class="food_figure">
+              <img src="/static/images/food/fried_rice_2.jpeg" alt="Fried Rice">
+              <figcaption>Veg Fried Rice</figcaption>
+            </figure>
+            <figure class="food_figure">
+              <img src="/static/images/food/fried_rice_3.jpeg" alt="Fried Rice">
+              <figcaption>Egg Fried Rice</figcaption>
+            </figure>
+          </div>
+
+
+      </li>
+      <li>
+        <span class="food_name">Noodles</span>
+        <span class="label">
+          <label for="flavor">Item Type:</label>
+          <select id="flavor" name="flavor">
+            <option value="chocolate">Chicken (N)</option>
+            <option value="vanilla">schezwan veg</option>
+            <option value="strawberry">egg</option>
+          </select>
+        </span>
+
+        <span class="price">Price: ₹90</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>Made from fresh and soft wheat or rice noodles, which are cooked to perfection and then stir-fried
+          <p>with a variety of vegetables, such as carrots, broccoli, and bell peppers. The dish is then seasoned with
+          </p>
+          a blend soy sauce, garlic, ginger, and other spices, creating a deliciously flavorful and aromatic noodle</p>
+          <p> dish. The dish can be served with different proteins such as chicken, beef, shrimp or tofu, making it a
+          </p>
+          <p> versatile option.</p>
+        </div>
+
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/noodles_1.jpeg" alt="Fried Rice">
+            <figcaption>Chicken Noodles (N)</figcaption>
+          </figure>
+          <figure class="food_figure">
+            <img src="/static/images/food/noodles_2.jpeg" alt="Fried Rice">
+            <figcaption>Schezwan</figcaption>
+          </figure>
+          <figure class="food_figure">
+            <img src="/static/images/food/noodles_3.jpeg" alt="Fried Rice">
+            <figcaption>Veg Fried Rice</figcaption>
+          </figure>
+        </div>
+
+
+
+
+      </li>
+
+
+
+      <li>
+        <span class="food_name">Shawarma</span>
+        <span class="label">
+          <label for="flavor">Item Type:</label>
+          <select id="flavor" name="flavor">
+            <option value="chocolate">Chicken</option>
+            <option value="vanilla">Paneer tikka</option>
+          </select>
+        </span>
+
+        <span class="price">Price: ₹110</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>Made with tender and juicy slices of marinated meat, usually chicken or panner, that are stacked</p>
+          <p> on a vertical spit and slowly roasted perfection. The meat is then thinly sliced and served in a</p>
+          <p> warm bread or wrap, along with fresh vegetables, such as lettuce, tomatoes,onions, and sometimes pickles.
+          </p>
+        </div>
+
+
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/shawarma_1.jpeg" alt="Fried Rice">
+            <figcaption>Chicken Shawarma (N)</figcaption>
+          </figure>
+          <figure class="food_figure">
+            <img src="/static/images/food/shawarma_2.jpeg" alt="Fried Rice">
+            <figcaption>Paneer Tikka</figcaption>
+          </figure>
+        </div>
+      </li>
+
+    </ol>
+    <h1 class="menu_headings">Beverages</h1>
+    <ol id="Beverages" class="menu_list">
+      <li>
+        <span class="food_name">Sugarcane juice</span>
+        <span class="price">Price: ₹50</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>Made from fresh sugarcane stalks. Our Sugarcane Juice is made by pressing and extracting the juice</p>
+          <p> from the sugarcane stalks, then strained and served over ice for a cool and satisfying drink.</p>
+        </div>
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/sugarcane_juice.jpeg" alt="Fried Rice">
+            <figcaption>Sugarcane Juice</figcaption>
+          </figure>
+        </div>
+
+
+
+
+      </li>
+
+
+
+
+      <li>
+        <span class="food_name">Oreo milkshake</span>
+        <span class="price">Price: ₹70</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>Made with premium vanilla ice cream blended with chunks of Oreo cookies, creating a rich and creamy base
+          </p>
+          <p> that's loaded with cookie bits. Topped with a generous swirl of whipped cream and more Oreo crumbles.</p>
+        </div>
+
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/oreo_milkshake.jpeg" alt="Fried Rice">
+            <figcaption>Oreo Milkshake</figcaption>
+          </figure>
+          
+        </div>
+
+
+
+      </li>
+
+
+
+
+
+
+
+      <li>
+        <span class="food_name">Muskmelon juice</span>
+        <span class="price">Price: ₹45</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>Made from ripe and juicy muskmelons. Our Muskmelon Juice is made by blending fresh muskmelon </p>
+          <p> chunks until smooth, and then strained for a smooth and refreshing drink.</p>
+        </div>
+
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/muskmelon_juice.jpeg" alt="Fried Rice">
+            <figcaption>Muskmelon Juice</figcaption>
+          </figure>
+        </div>
+
+
+
+      </li>
+      <li>
+        <span class="food_name">Coffee</span>
+        <span class="label">
+          <label for="flavor">Item Type:</label>
+          <select id="flavor" name="flavor">
+            <option value="chocolate">cold</option>
+            <option value="vanilla">hot</option>
+
+          </select>
+        </span>
+
+        <span class="price">Price: ₹25</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>Our Coffee is made from premium roasted coffee beans that are freshly ground and brewed to perfection</p>
+          <p> Served hot or cold, our Coffee can be customized to your liking with your choice of milk and sweetener.
+          </p>
+        </div>
+
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/coffee_1.jpeg" alt="Fried Rice">
+            <figcaption>Cold Coffee</figcaption>
+          </figure>
+          <figure class="food_figure">
+            <img src="/static/images/food/coffee_2.jpeg" alt="Fried Rice">
+            <figcaption>Coffee</figcaption>
+          </figure>
+        </div>
+
+
+
+
+
+
+      </li>
+      <li>
+        <span class="food_name">Mojito</span>
+        <span class="label">
+          <label for="flavor">Item Type:</label>
+          <select id="flavor" name="flavor">
+            <option value="chocolate">red cola</option>
+            <option value="vanilla">blue cola</option>
+
+          </select>
+        </span>
+
+        <span class="price">Price: ₹30</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>A fizzy and refreshing beverage that's perfect for quenching your thirst and adding a burst of flavor to
+            your day.</p>
+          <p> Our Soda is served cold and carbonated, creating a bubbly and effervescent drink that's both refreshing
+            and enjoyable.</p>
+        </div>
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/soda_1.jpeg" alt="Fried Rice">
+            <figcaption>Red Mojito</figcaption>
+          </figure>
+          <figure class="food_figure">
+            <img src="/static/images/food/soda_2.jpeg" alt="Fried Rice">
+            <figcaption>Blue Mojito</figcaption>
+          </figure>
+        </div>
+
+
+
+
+      </li>
+    </ol>
+
+    <h1 class="menu_headings"">Desserts</h1>
+      <ol id="Desserts" class=" menu_list">
+      <li>
+        <span class="food_name">Neutella brownie</span>
+        <span class="price">Price: ₹170</span>
+        <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+        <button class="add">+</button>
+        <button class="minus">-</button>
+        <div class="size">
+          <p>Combines the rich, chocolatey goodness of a classic brownie with the creamy, hazelnut flavor of Nutella. This indulgent treat is made with high-quality ingredients, including premium chocolate, fresh eggs, and a generous amount of Nutella spread.
+            </p>
+        </div>
+
+        <div class="food_images">
+          <figure class="food_figure">
+            <img src="/static/images/food/neutella_brownie.jpeg" alt="Fried Rice">
+            <figcaption>Nutella Brownie</figcaption>
+          </figure>
+        </div>
+
+
+
+
+      </li>
+        <li>
+          <span class="food_name">Butterscotch ice cream</span>
+          <span class="price">Price: ₹70</span>
+          <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+          <button class="add">+</button>
+          <button class="minus">-</button>
+          <div class="size">
+            <p>Made with a smooth and creamy base of vanilla ice cream, swirled with ribbons of rich and buttery
+              butterscotch sauce.</p>
+            <p> The sweet and buttery flavor of the butterscotch is perfectly balanced with the creamy and cool ice
+              cream</p>
+          </div>
+          <div class="food_images">
+            <figure class="food_figure">
+              <img src="/static/images/food/butter_scotch_icecream.jpeg" alt="Fried Rice">
+              <figcaption>Butter Scotch IceCream</figcaption>
+            </figure>
+          </div>
+
+
+
+
+        </li>
+
+
+
+
+
+        <li>
+          <span class="food_name">Choco almond ice cream</span>
+          <span class="price">Price: ₹155</span>
+          <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+          <button class="add">+</button>
+          <button class="minus">-</button>
+          <div class="size">
+            <p>Made with a creamy and rich chocolate ice cream base that's loaded with crunchy almond pieces, </p>
+            <p> The ice cream is also swirled with a ribbon of silky chocolate sauce</p>
+          </div>
+
+          <div class="food_images">
+            <figure class="food_figure">
+              <img src="/static/images/food/choco_almoond_icecream.jpeg" alt="Fried Rice">
+              <figcaption>Choco Almond IceCream</figcaption>
+            </figure>
+          </div>
+
+        </li>
+
+
+
+
+
+
+        <li>
+          <span class="food_name">Pastry</span>
+          <span class="price">Price: ₹120</span>
+          <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+          <button class="add">+</button>
+          <button class="minus">-</button>
+          <div class="size">
+            <p>Indulge in our buttery and flaky pastry, filled with fresh seasonal fruits and drizzled with a sweet
+              glaze. </p>
+
+          </div>
+
+
+          <div class="food_images">
+            <figure class="food_figure">
+              <img src="/static/images/food/pastry.jpeg" alt="Fried Rice">
+              <figcaption>Pastry</figcaption>
+            </figure>
+            <figure class="food_figure">
+              <img src="/static/images/food/pastry2.jpg" alt="Fried Rice">
+              <figcaption>Strawberry Pastry</figcaption>
+            </figure>
+            <figure class="food_figure">
+              <img src="/static/images/food/pastry3.jpg" alt="Fried Rice">
+              <figcaption>Red Velvet Pastry</figcaption>
+            </figure>
+          </div>
+
+
+
+        </li>
+
+
+
+      </ol>
+
+
+{% for item in menu_items %}
+    <h1 class="menu_headings"">Other Added Items</h1>
+<ol class="menu_list">
+   <li>
+      <span class="food_name">{{ item[0] }}</span>
+      <span class="price">Price: ₹{{ item[1] }}</span>
+      <span class="quantity"><input type="number" class="quantity-input" value="1" min="1"></span>
+      <button class="add">+</button>
+      <button class="minus">-</button>
+
+      <div class="size">
+         <p >{{ item[2] }}</p>
+      </div>
+
+      <div class="food_images">
+         <figure class="food_figure">
+            <img src="/{{ item[3] }}" alt="{{ item[0] }}">
+            <figcaption>{{ item[0] }}</figcaption>
+         </figure>
+      </div>
+   </li>
+</ol>
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+  <h1 class="headings">Your Cart</h1>
+
+  <div class="cart_box">
+    <ol class="cart_list">
+      <h2 class="Item_heading">Your Items</h2>
+      <h3 class="Total_price_heading">Total Price: <span class="total_price">0</span></h3>
+      <span class="sample">(Your cart is empty. Click on the add button to add stuff to your cart.)</span>
+      <!-- <span class="cart_item_name">adfasdfadf </span> -->
+      <!-- <span class="cart_item_basePrice">$200 </span> -->
+      <!-- <span class="random_span">each &nbsp;&nbsp;&nbsp;&nbsp; Qty:  </span> -->
+      <!-- <span class="cart_item_quantity">1 </span> -->
+      <!-- <span class="cart_item_price">Price: $100</span> -->
+    </ol>
+    <form class="form" action="/menu.html" method="POST" onsubmit="return validateForm()"> 
+      <h2 class="Item_heading">Personal Details</h2>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="address">Hostel and Room no:</label>
+      <input type="text" id="room" name="room"><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <input type="hidden" id="total_price" name="total_price" value="0">
+
+      <input class="submit" type="submit" value="Place Your Order!">
+    </form>
+
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+
+  <div class="footer">
+    <div class="footer-col">
+      <div style="align-self: center">
+        <img src="./static/images/logo.jpeg" height="150px" />
+      </div>
+      <div class="footer-box footer-box-big" style="margin-top: 0">
+        "Laughter is brightest where food is best"<br /><br />
+        - Irish Proverb
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-box footer-box-big footer-scroll-box">
+      <b><u>Credits</u></b><br /><br />
+      <div class="footer-box footer-box-small">
+        <a href="https://chat.openai.com" target="_blank">Chat GPT <i class="link-icon"></i></a>
+      </div>
+      <div class="footer-box footer-box-small">
+        <a href="https://fonts.google.com" target="_blank">Google Fonts <i class="link-icon"></i></a>
+      </div>
+      <div class="footer-box footer-box-small">
+        <a href="https://fontawesome.com" target="_blank">Font Awesome <i class="link-icon"></i>
+        </a>
+      </div>
+      <div class="footer-box footer-box-small">
+        <a href="https://reddit.com" target="_blank">Reddit <i class="link-icon"></i>
+        </a>
+      </div>
+      <div class="footer-box footer-box-small">
+        <a href="https://stackoverflow.com" target="_blank">StackOverflow <i class="link-icon"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-col">
+      <div class="footer-box footer-box-big footer-col-3-grid">
+        <div class="footer-box footer-box-small">
+          <a href="menu.html">Menu</a>
+        </div>
+        <div class="footer-box footer-box-small">
+          <a href="orders.html">Present Orders</a>
+        </div>
+        <div class="footer-box footer-box-small">
+          <a href="index.html">About</a>
+        </div>
+          <div class="footer-box footer-box-small">
+            <a href="cook.html">Cook</a>
+          </div>
+      </div>
+      <div class="footer-box footer-box-big" style="font-size: 15px">
+        <p style="font-size: 15px">IIIT, Gacchibowli, Hyderabad</p>
+        <a href="http://www.wtfpl.net/" target="_blank" rel="nofollow">License <i class="link-icon"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+    // Add event listener to all add buttons
+    const minusButtons = document.querySelectorAll('.minus');
+    const addButtons = document.querySelectorAll('.add');
+    addButtons.forEach(button => button.addEventListener('click', addItemToCart));
+
+
+
+    function addItemToCart(event) {
+      const addButton = event.target;
+      const listItem = addButton.closest('li');
+      const itemName = listItem.querySelector('.food_name').textContent;
+      const itemPrice = listItem.querySelector('.price').textContent;
+      const itemQuantity = parseInt(listItem.querySelector('.quantity-input').value);
+
+      const cartList = document.querySelector('.cart_list');
+      if (cartList.childElementCount == 3) {
+        const temp = cartList.querySelector('.sample');
+        cartList.removeChild(temp);
+      }
+      let existingItem = document.querySelector(`.cart_item_name[data-name="${itemName}"]`);
+      if (existingItem) {
+        const existingQuantity = parseInt(existingItem.parentNode.querySelector('.cart_item_quantity').textContent);
+        const newQuantity = existingQuantity + itemQuantity;
+        existingItem.parentNode.querySelector('.cart_item_quantity').textContent = newQuantity;
+        existingItem.parentNode.querySelector('.cart_item_price').textContent = `Print: ₹${newQuantity * parseInt(itemPrice.substring(8))}`;
+      } else {
+        const cartList = document.querySelector('.cart_list');
+        const finalPrice = `${itemQuantity * parseInt(itemPrice.substring(8))}`
+        const cartItem = document.createElement('li');
+        cartItem.innerHTML = `
+      <span class="cart_item_name" data-name="${itemName}">${itemName}</span>
+      <span class="cart_item_basePrice">₹${itemPrice.substring(8)}</span>
+      <span class="random_span">each &nbsp;&nbsp;&nbsp;&nbsp; Qty:  </span>
+      <span class="cart_item_quantity">${itemQuantity}</span>
+      <span class="cart_item_price">Price: ₹${finalPrice}</span>
+    `;
+        cartList.appendChild(cartItem);
+        const newBr = document.createElement('br');
+        cartList.appendChild(newBr);
+      }
+
+      updateTotalPrice();
+    }
+
+    function updateTotalPrice() {
+      const cartItems = document.querySelectorAll('.cart_item_price');
+      let totalPrice = 0;
+      cartItems.forEach(item => {
+        totalPrice += parseInt(item.textContent.substring(8));
+      });
+      const totalPriceElement = document.querySelector('.total_price');
+      totalPriceElement.textContent = `₹${totalPrice}`;
+      var totalPriceSpan = document.querySelector('.total_price');
+      var totalPriceInput = document.querySelector('#total_price');
+      totalPriceInput.value = totalPriceSpan.innerText;
+    }
+
+    // remove elements by minus sign
+    minusButtons.forEach(minusButton => {
+      minusButton.addEventListener('click', () => {
+
+        const mlistItem = minusButton.closest('li');
+        const cartItemName = mlistItem.querySelector('.food_name').textContent;
+        const cartList = document.querySelector('.cart_list');
+        const cartItems = cartList.querySelectorAll('li');
+
+        cartItems.forEach(cartItem => {
+          const existingCartItemName = cartItem.querySelector('.cart_item_name').textContent;
+          if (existingCartItemName == cartItemName && cartList.childElementCount > 2) {
+            cartList.removeChild(cartItem.nextElementSibling)
+            cartList.removeChild(cartItem);
+            updateTotalPrice();
+          }
+        });
+      });
+    });
+
+    function validateForm() {
+    var name = document.getElementById("name").value;
+    var room = document.getElementById("room").value;
+    var phone = document.getElementById("phone").value;
+    var total_price = document.getElementById("total_price").value;
+    if (name == "" || room == "" || phone == "" || total_price == "") {
+        alert("Please enter sufficient details.");
+        return false;
+    }
+
+    if (isNaN(phone)) {
+        alert("Phone must be a unique number.");
+        return false;
+    } 
+    return true;
+}
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

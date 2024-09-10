@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='/favicon.ico') }}">
+
+    <link rel="stylesheet" href="./static/css/common.css" />
+    <link rel="stylesheet" href="./static/css/navbar.css" />
+    <link rel="stylesheet" href="./static/css/footer.css" />
+    <link rel="stylesheet" href="./static/css/cook.css" />
+    <link rel="stylesheet" href="./static/css/private.css" />
+    <title>IIITeatz</title>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <div class="meanius">
+      <img
+        src="./static/images/logo.jpeg"
+        alt="Meanius Logo"
+        width="60"
+        class="meanius-item"
+      />
+     <p class="meanius-item"></p>
+      <img
+        src="./static/images/banner_FEF665.png"
+        alt="Meanius"
+        width="250"
+        class="meanius-item"
+      />
+    </div>
+    <div class="navbar">
+      <a href="index.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="orders.html">Present Orders</a>
+      <a href="cook.html" class="navbar-selected">Cook Special</a>
+      <a href="https://github.com/CS6-201-ISS-S23/project-diss">Contribute</a>
+    </div>
+
+
+
+     <!-- forms and stuff -->
+
+
+
+{% if session['user'] %}
+    <h1>You are logged in as {{ session['user'] }}</h1>
+
+
+<div class="post">
+  <h2>New Menu Item</h2>
+  <form method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+    <p class="upper">
+      <span class="Name">
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" name="item-name" required>
+      </span>
+      <span class="item_class">
+        <label for="item-class">Item Class:</label>
+        <select id="item-class" name="item-class">
+          <option value="dessert">Dessert</option>
+          <option value="food">Food</option>
+          <option value="beverage">Beverage</option>
+        </select>
+      </span>
+      <span class="base_price">
+        <label for="base-price">Base Price (in Rs.):</label>
+        <input type="number" id="base-price" name="base-price" step="1" required>
+      </span>
+    </p>
+    <br>
+    <p class="description">
+      <label for="description">Description:</label><br>
+      <textarea id="description" name="description" rows="5"></textarea>
+    </p>
+    <div class="image_input">
+      <label for="image">Choose an image:</label>
+      <input type="file" id="image" name="image">
+    </div>
+    <p class="submit">
+      <input type="submit" value="Submit">
+    </p>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% else %}
+    <figure class="lock">
+    <img src="/static/images/lock.jpeg">
+    <figcaption>Please Sign in to view this page</figcaption>   
+    </figure>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footer-col">
+        <div style="align-self: center">
+          <img src="./static/images/logo.jpeg" height="150px" />
+        </div>
+        <div class="footer-box footer-box-big" style="margin-top: 0">
+          "Laughter is brightest where food is best"<br /><br />
+          - Irish Proverb
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-box footer-box-big footer-scroll-box">
+        <b><u>Credits</u></b
+        ><br /><br />
+        <div class="footer-box footer-box-small">
+          <a href="https://chat.openai.com" target="_blank"
+            >Chat GPT <i class="link-icon"></i
+          ></a>
+        </div>
+       <div class="footer-box footer-box-small">
+          <a href="https://fonts.google.com" target="_blank"
+            >Google Fonts <i class="link-icon"></i
+          ></a>
+        </div>
+        <div class="footer-box footer-box-small">
+          <a href="https://fontawesome.com" target="_blank"
+            >Font Awesome <i class="link-icon"></i>
+          </a>
+        </div>
+        <div class="footer-box footer-box-small">
+          <a href="https://reddit.com" target="_blank"
+            >Reddit <i class="link-icon"></i>
+          </a>
+       </div>
+        <div class="footer-box footer-box-small">
+          <a href="https://stackoverflow.com" target="_blank"
+            >StackOverflow <i class="link-icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-col">
+        <div class="footer-box footer-box-big footer-col-3-grid">
+          <div class="footer-box footer-box-small">
+            <a href="menu.html">Menu</a>
+          </div>
+          <div class="footer-box footer-box-small">
+            <a href="index.html">About</a>
+          </div>
+          <div class="footer-box footer-box-small">
+            <a href="orders.html">Present Orders</a>
+          </div>
+          <div class="footer-box footer-box-small">
+            <a href="cook.html">Cook</a>
+          </div>
+       </div>
+        <div class="footer-box footer-box-big" style="font-size: 15px">
+          <p style="font-size: 15px">IIIT, Gacchibowli, Hyderabad</p>
+          <a href="http://www.wtfpl.net/" target="_blank" rel="nofollow"
+            >License <i class="link-icon"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+
+function validateForm() {
+  // Get the values of the input fields
+  var itemName = document.getElementById("item-name").value;
+  var basePrice = document.getElementById("base-price").value;
+  
+  // Check if the required fields are not empty
+  if (itemName == "" || basePrice == "" || des) {
+    alert("Please fill in all required fields.");
+    return false;
+  }
+  
+function validateForm() {
+  var itemName = document.forms["menuForm"]["item-name"].value;
+  var basePrice = document.forms["menuForm"]["base-price"].value;
+  var description = document.forms["menuForm"]["description"].value;
+  
+  if (itemName == "") {
+    alert("Please enter an item name.");
+    return false;
+  }
+  
+  if (basePrice == "") {
+    alert("Please enter a base price.");
+    return false;
+  }
+
+  if (description == "") {
+    alert("Please enter a description.");
+    return false;
+  }
+  
+  // Check if the base price is a positive number
+  if (basePrice < 0) {
+    alert("Base price must be a positive number.");
+    return false;
+  }
+  return true;
+}
+
+    </script>
+ </body>
+
+</html>

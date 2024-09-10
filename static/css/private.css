@@ -1,0 +1,241 @@
+@import url("/static/css/fonts.css");
+
+
+
+.lock img{
+    height: 500px;
+    width: 500px;
+}
+
+.lock figcaption{
+    display: block;
+    font-family: "Quote Font";
+    font-size: 50px;
+    color: red;
+}
+
+
+/* Form container */
+.form-container {
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Form header */
+.form-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f5f6f7;
+  border-radius: 5px 5px 0 0;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1b;
+}
+
+/* Form content */
+.form-content {
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f6f783;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px 1px #0079d3;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px 1px #0079d3;
+}
+
+/* Form actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f5f6f7;
+  border-radius: 0 0 5px 5px;
+}
+
+.form-actions button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0079d3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-actions button[type="submit"]:hover {
+  background-color: #005ea8;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  background-color: #ffffff69;
+  background-image: url(/static/images/banner_3.jpeg);
+  background-size:cover;
+  border-radius: 30px;
+}
+
+.post h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "Heading Font";
+}
+
+.post p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.post label {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.post input,
+.post select {
+  font-size: 16px;
+  padding: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.post .description {
+  font-size: 16px;
+  margin-top: 70px;
+}
+
+.Name{
+    background-color: #f6b1b189;
+    border-radius: 10px;
+    position: absolute;
+    left: 7vw;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+.item_class{
+    background-color: #f6b1b189;
+    border-radius: 10px;
+    position: absolute;
+    left: 32vw;
+    padding: 10px;
+}
+
+.base_price{
+    background-color: #f6b1b189;
+    border-radius: 10px;
+    position: absolute;
+    left: 58vw;
+    padding: 10px;
+}
+
+.description{
+    background-color: #f6b1b189;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.description label{
+    position: absolute;
+    left: 12vw;
+}
+.description textarea{
+    margin-top: 20px;
+    height: 200px;
+    position: relative;
+    width: 80vw;
+    border-radius: 30px;
+    padding: 20px;
+    background: #ffffff91;
+    font-size: 15px;
+}
+
+#base-price{
+
+    background: #ffffff91;
+}
+
+#item-name{
+    background: #ffffff91;
+}
+
+#item-class{
+    background: #ffffff91;
+}
+
+.submit{
+    padding: 20px;
+}
+.submit input{
+    font-size: 30px;
+    border-radius: 7px;
+    font-family: "Song Font";
+}
+
+
+.image_input {
+  display: inline-flex;
+  border-radius: 30px;
+    background-color: #f6b1b189;
+    padding: 30px;
+    margin: 1%;
+}
+
+.image_input label {
+  display: inline-flex;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.image_input input{
+    padding-left: 30px;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 5px;
+}

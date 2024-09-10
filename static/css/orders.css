@@ -1,0 +1,129 @@
+@import url("/static/css/fonts.css");
+
+.order_table{
+    margin: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-image: url(/static/images/banner_3.jpeg);
+    border-radius: 30px;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+.order_list{
+    background-color: rgba(240, 248, 255, 0.47);
+    border-radius: 30px;
+    margin: 2%;
+    margin-bottom: 4%;
+    padding: 5px;
+    font-family: "Song Font";
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.order_list li{
+    background-color: rgba(255, 255, 255, 0.535) ;
+    border-radius: 30px;
+    margin: 2%;
+    margin-left: 3%;
+}
+
+.serial{
+    position: absolute;
+    left: 5vw;
+    font-size: 30px;
+}
+
+.Name{
+    position: absolute;
+    padding-top: 10px;
+    left: 13vw;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.phone{
+    text-align: left;
+    margin-left: 5vw;
+    font-size: 20px;
+    margin-top: none;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.room_no{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+}
+
+.amount{
+    position: absolute;
+    left: 73vw;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.ETA{
+    position: absolute;
+    left: 80vw;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.order_heading{
+    font-family: "Heading Font";
+}
+
+
+.header{
+    padding: 10px;
+}
+
+.head_serial{
+    position: absolute;
+    padding-top: 10px;
+    left: 5vw;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.head_Name{
+    position: absolute;
+    padding-top: 10px;
+    left: 13vw;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+.head_room_no{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.head_amount{
+    position: absolute;
+    left: 65vw;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.head_ETA{
+    position: absolute;
+    left: 82vw;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.waste{
+    padding: 30px;
+    font-size: 50px;
+    color: rgba(109, 39, 4, 0.643);
+}
